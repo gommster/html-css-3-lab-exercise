@@ -4,20 +4,37 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className='Header'>
+        <div className='navContainer'>
+          <div className='bootstrapButton'>
+            <img src='https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg'></img>
+          </div>
+          <button className='menuButton'>
+            <div>
+              MENU
+            </div>
+            <div className='hamburger'>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+          <div className='navBar'>
+            <div>SERVICES</div>
+            <div>PORTFOLIO</div>
+            <div>ABOUT</div>
+            <div>TEAM</div>
+            <div>CONTACT</div>
+          </div>
+        </div>
+      </nav>
+      <section className="welcome">
+        <div className="container">
+          <p className="first">Welcome to Our Studio!</p>
+          <p className="big">IT'S NICE TO MEET YOU</p>
+          <a className="moreButton">TELL ME MORE</a>
+        </div>
+      </section>
     </div>
   );
 }
